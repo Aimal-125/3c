@@ -28,14 +28,14 @@ main {
 }
 .container {
 	width: 100%;
-	height: 80%;
+	height: 100%;
 	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .div1, .div2, .div3 {
-	width: 300px;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -55,6 +55,14 @@ main {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+.icondiv img {
+	display: block;
+	width: 50%;
+	height: 50%;
+}
+.imgspan {
+	display: block;
+}
 .imgspan img {
 	display: block;
 }
@@ -63,7 +71,7 @@ main {
 	color: hsl(0, 0%, 95%);
 }
 .para {
-	height: 40%;
+	height: initial;
 	overflow: auto;
 	display: flex;
 	font-size: 3vh;
@@ -72,11 +80,11 @@ main {
 }
 .btndiv button {
 	border: none;
-	width: 60%;
+	width: 100%;
 	padding: 0.5rem;
 	background: hsl(0, 0%, 95%);
 	font-weight: bold;
-	font-size: 2.5vh;
+	font-size: 3vh;
 	border-radius: 20px;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -99,20 +107,31 @@ main {
 
 @media screen and (orientation: portrait) {
 	main {
-		height: initial; 
+		height: initial;
 	}
 	.container {
 		flex-direction: column;
 		width: 100%;
-		height: initial;
+		height: 100%;
 	}
 	.div1, .div2, .div3 {
 		width: 100%;
-		height: 400px;
+		height: 100%;
+	}
+	.icondiv {
+		padding: 1rem;
+	}
+	.hd {
+		font-size: 4vh;
+		padding: 1rem;
 	}
 	.para {
 		height: initial;
-		font-size: 20px;
+		font-size: 2vh;
+		padding: 1rem;
+	}
+	.btndiv {
+		padding: 1rem;
 	}
 	.div1 {
 		border-top-right-radius: 10px;
